@@ -10,9 +10,12 @@ import {
   RouterProvider,
   Route,
   Outlet,
+  Navigate,
 } from "react-router-dom";
 
 function App() {
+  const currentUser = true;
+
   const Layout = () => {
     return (
       <div>
@@ -25,11 +28,21 @@ function App() {
       </div>
     );
   };
+  const ProtectedRoute = ({ children }) => {
+    if (!currentUser) {
+      return <Navigate to="/login" />;
+    }
+    return children;
+  };
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout />,
+      element: (
+        <ProtectedRoute>
+          <Layout />
+        </ProtectedRoute>
+      ),
       children: [
         { path: "/", element: <Home /> },
         { path: "/profile/:id", element: <Profile /> },
