@@ -10,8 +10,8 @@
   .container {
     padding: 20px;
     .item {
-        box-shadow: 0px 0px 15px 1px rgba($color: #000000, $alpha: 0.1);
-        padding: 8px 20px;
+      box-shadow: 0px 0px 15px 1px rgba($color: #000000, $alpha: 0.1);
+      padding: 8px 20px;
       span {
       }
       .user {
@@ -37,22 +37,21 @@
           display: flex;
           align-items: center;
           gap: 10px;
-          button{
+          button {
             border: none;
             padding: 5px;
             color: white;
             cursor: pointer;
 
-            &:first-child{
-                background-color: #5271ff;
+            &:first-child {
+              background-color: #5271ff;
             }
-            
-            &:last-child{
-                background-color: #f0544f;
+
+            &:last-child {
+              background-color: #f0544f;
             }
           }
         }
-        
       }
     }
   }
