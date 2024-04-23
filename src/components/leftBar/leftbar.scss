@@ -1,11 +1,14 @@
 .leftBar {
   flex: 2;
   position: sticky;
-  top: calc(100vh - 70.8px);
+  height: calc(100vh - 70.8px);
+  top: 70px;
+  overflow: scroll;
+  scrollbar-width: none;
   .container {
-    padding: 10px 20px;
+    padding: 20px 20px;
     hr {
-      margin: 15px 0;
+      margin: 20px 0;
       background-color: black;
       border: none;
       height: 0.5px;
@@ -16,8 +19,11 @@
       gap: 10px;
       .user {
         display: flex;
+        margin-bottom: 10px;
         align-items: center;
         gap: 10px;
+        border-bottom: 1px solid black;
+        padding-bottom: 15px;
         img {
           width: 30px;
           height: 30px;

@@ -85,6 +85,7 @@ const LeftBar = () => {
             <img src={Courses} alt="" />
             <span>Courses</span>
           </div>
+          
         </div>
       </div>
     </div>
