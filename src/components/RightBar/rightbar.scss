@@ -1,8 +1,9 @@
 .rightBar {
-  flex: 2.8;
+  flex: 3.5;
   position: sticky;
   top: 70px;
   height: calc(100vh - 70.8px);
+  overflow: scroll;
   // background-color: lightblue;
   &::-webkit-scrollbar {
     display: none;
@@ -10,6 +11,8 @@
   .container {
     padding: 20px;
     .item {
+      // width: 100;
+      margin-bottom: 30px ;
       box-shadow: 0px 0px 15px 1px rgba($color: #000000, $alpha: 0.1);
       padding: 8px 20px;
       span {
@@ -19,10 +22,15 @@
         align-items: center;
         justify-content: space-between;
         margin: 20px 0;
+        span{
+          font-size: 13px;
+          // font-weight: 600;
+        }
         .userInfo {
           display: flex;
           gap: 10px;
           align-items: center;
+          position: relative;
           img {
             width: 40px;
             height: 40px;
@@ -31,6 +39,22 @@
           }
           span {
             font-weight: 500;
+            font-size: 15px;
+          }
+          p{
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .online{
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: limegreen;
+            position: absolute;
+            top: 0;
+            right: 50%;
           }
         }
         .buttons {
