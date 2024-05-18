@@ -1,9 +1,12 @@
 import React from "react";
+import Posts from "../../components/posts/Posts";
+import Stories from "../../components/stories/Stories";
 
 const Home = () => {
   return (
     <div className="home">
-      <h1>home</h1>
+      <Stories/>
+      <Posts/>
     </div>
   );
 };

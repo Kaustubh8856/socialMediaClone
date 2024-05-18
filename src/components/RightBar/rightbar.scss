@@ -4,7 +4,7 @@
   top: 70px;
   height: calc(100vh - 70.8px);
   overflow: scroll;
-  // background-color: lightblue;
+  border-left: 2px solid rgba($color: #000000, $alpha: 0.1);
   &::-webkit-scrollbar {
     display: none;
   }
